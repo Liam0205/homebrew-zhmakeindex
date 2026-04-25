@@ -5,21 +5,21 @@
 class Zhmakeindex < Formula
   desc "Chinese-aware makeindex replacement for LaTeX"
   homepage "https://github.com/Liam0205/zhmakeindex"
-  version "1.2.1-rc3"
+  version "1.2.1-rc4"
   license "LPPL-1.3c"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc3/zhmakeindex_1.2.1-rc3_darwin_amd64.tar.gz"
-      sha256 "9f71d1d0289defc1db42a43fe92f6086741dff9274e62e4c5849a0e8536bdd48"
+      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc4/zhmakeindex_1.2.1-rc4_darwin_amd64.tar.gz"
+      sha256 "f11dfd8ceb666485235dc0899149e21671c83f98db67d6ff7c57b86d82e7707a"
 
       define_method(:install) do
         bin.install "zhmakeindex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc3/zhmakeindex_1.2.1-rc3_darwin_arm64.tar.gz"
-      sha256 "e8b36346f80be15537567e8bd78f719b2d5ccecf7714822d299f4299d4977286"
+      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc4/zhmakeindex_1.2.1-rc4_darwin_arm64.tar.gz"
+      sha256 "db5ab1ce5034a04ef2b8a00308fe9641ae711ed80f515b301077065ad1423047"
 
       define_method(:install) do
         bin.install "zhmakeindex"
@@ -29,15 +29,15 @@ class Zhmakeindex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc3/zhmakeindex_1.2.1-rc3_linux_amd64.tar.gz"
-      sha256 "ffa8f86f0cbc9b6f9e2e47dd84866a9e4275c6bc5e1c7654a97e32771073c5a0"
+      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc4/zhmakeindex_1.2.1-rc4_linux_amd64.tar.gz"
+      sha256 "6ef30794a7e960e2b3ba24cd1bd8996f208762828f1d31a43cb2c20b1e0213ad"
       define_method(:install) do
         bin.install "zhmakeindex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc3/zhmakeindex_1.2.1-rc3_linux_arm64.tar.gz"
-      sha256 "d7a563a1c20651859173af0f7eef372ddefc47089577bc0b4627f836e45f2b54"
+      url "https://github.com/Liam0205/zhmakeindex/releases/download/v1.2.1-rc4/zhmakeindex_1.2.1-rc4_linux_arm64.tar.gz"
+      sha256 "f8ec851b8305c56da1abcf024c3a5af95c0560c649a3daaa4ded50e167a54a95"
       define_method(:install) do
         bin.install "zhmakeindex"
       end
